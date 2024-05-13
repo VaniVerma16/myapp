@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Appointments from "./components/Appointments";
 import Doctors from "./components/Doctors";
 import Patients from "./components/Patients";
@@ -19,14 +13,23 @@ const App = () => {
         <h1 style={{ color: "teal" }}>Hospital Managment System</h1>
         <nav>
           <div className="sidenav">
-            <a className={isLinkActive("/appointments") ? "active" : ""} href="/appointments">
-            Appointments
+            <a
+              className={isLinkActive("/appointments") ? "active" : ""}
+              href="/appointments"
+            >
+              Appointments
             </a>
-            <a className={isLinkActive("/appointments") ? "active" : ""} href="/patients">
-            Patients
+            <a
+              className={isLinkActive("/appointments") ? "active" : ""}
+              href="/patients"
+            >
+              Patients
             </a>
-            <a className={isLinkActive("/appointments") ? "active" : ""} href="/doctors">
-            Doctors
+            <a
+              className={isLinkActive("/appointments") ? "active" : ""}
+              href="/doctors"
+            >
+              Doctors
             </a>
           </div>
         </nav>
